@@ -1,6 +1,7 @@
 package franktech.flirtapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -68,7 +69,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public boolean onMarkerClick(Marker marker) {
 //                int position = (int)(marker.getTag());
                 //Using position get Value from arraylist
-                Toast.makeText(getApplicationContext(), "Test 2",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MapsActivity.this, DecideActivity.class);
+                startActivity(intent);
                 return false;
             }
         });
