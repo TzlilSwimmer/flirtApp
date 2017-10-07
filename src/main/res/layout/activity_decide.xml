@@ -4,36 +4,28 @@
     android:layout_height="match_parent"
     android:layoutDirection="ltr">
 
-    <LinearLayout
-        android:id="@+id/flirt_toll_bar"
+    <franktech.flirtapp.view.StripBar
+        android:id="@+id/strip_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"/>
 
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="someone is interested in you"
-        android:textColor="@android:color/holo_blue_dark"/>
-
-    </LinearLayout>
-
-    <ImageView
+    <ImageButton
         android:id="@+id/block"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="?android:selectableItemBackground"
         android:src="@android:drawable/ic_lock_power_off"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/flirt_toll_bar"/>
+        android:layout_below="@+id/strip_bar"/>
 
     <ImageView
         android:id="@+id/picture"
         android:layout_width="280dp"
         android:layout_height="310dp"
         android:layout_below="@+id/block"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
