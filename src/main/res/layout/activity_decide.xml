@@ -15,7 +15,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="?android:selectableItemBackground"
-        android:src="@android:drawable/ic_lock_power_off"
+        android:src="@drawable/ic_block_user"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/strip_bar"/>
 
@@ -38,12 +38,12 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="?android:selectableItemBackground"
-            android:src="@android:drawable/btn_dialog"/>
+            android:src="@drawable/ic_cancel_music"/>
 
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="?android:selectableItemBackground"
-            android:src="@android:drawable/btn_star" />
+            android:src="@drawable/ic_hearts" />
     </LinearLayout>
 </RelativeLayout>
